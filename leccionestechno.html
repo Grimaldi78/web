@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tech for Adults: Basic Computer Skills</title>
+  <link rel="stylesheet" href="css/leccionestechno.css"/>
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">LearnSphere</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Kids</a></li>
+      <li><a href="#">Teenagers</a></li>
+      <li><a href="#">Adults</a></li>
+    </ul>
+  </nav>
+  <main>
+    <!-- Section 1: What is a Computer? -->
+    <section>
+      <h2>1. What is a Computer?</h2>
+      <p>A computer is a tool that helps you work, communicate, learn, and solve problems. It has several key parts:</p>
+      <ul>
+        <li>Monitor – the screen that shows images and text</li>
+        <li>Keyboard – used to type words and commands</li>
+        <li>Mouse – helps you click and move items on screen</li>
+        <li>CPU – the “brain” that runs the system</li>
+      </ul>
+      <iframe src="https://www.youtube.com/embed/TuZ5g1iXL-A" allowfullscreen></iframe>
+      <div class="card">
+        <h3>Practice Task</h3>
+        <p>Find each part of a computer and say its name out loud. If you’re using a phone or tablet, compare the differences.</p>
+      </div>
+    </section>
+
+    <!-- Section 2: Using a Mouse and Keyboard -->
+    <section>
+      <h2>2. Using a Mouse and Keyboard</h2>
+      <p>Learning how to move the mouse and type helps you control the computer. Try these basic actions:</p>
+      <ul>
+        <li>Click: press a button on the mouse</li>
+        <li>Double-click: press twice quickly to open things</li>
+        <li>Right-click: shows extra options</li>
+        <li>Typing: use letters and numbers to write</li>
+      </ul>
+      <iframe src="https://www.youtube.com/embed/E_ZLdq4tMhg" allowfullscreen></iframe>
+      <div class="card">
+        <h3>Try This</h3>
+        <p>Open a document and type: “Hello! My name is ___.” Practice using the shift key and deleting words.</p>
+      </div>
+    </section>
+
+    <!-- Section 3: Navigating a Computer -->
+    <section>
+      <h2>3. Navigating and Opening Programs</h2>
+      <p>The desktop has icons you can click to open programs. Try finding these common icons:</p>
+      <ul>
+        <li>Folder – stores files and documents</li>
+        <li>Browser – used to go online (e.g., Chrome, Edge)</li>
+        <li>Settings – helps you change system preferences</li>
+      </ul>
+      <iframe src="https://www.youtube.com/embed/RnLJjc6KpDE" allowfullscreen></iframe>
+      <div class="card">
+        <h3>Activity</h3>
+        <p>Find the browser icon and open a webpage like www.google.com. Try typing your name into the search bar.</p>
+      </div>
+    </section>
+
+    <!-- Section 4: Safety Tips -->
+    <section>
+      <h2>4. Computer Safety Basics</h2>
+      <p>It’s important to stay safe while using technology. Keep these rules in mind:</p>
+      <ul>
+        <li>Don’t click on unknown links or pop-ups</li>
+        <li>Use strong passwords with letters and numbers</li>
+        <li>Update your programs regularly</li>
+      </ul>
+      <iframe src="https://www.youtube.com/embed/4owJk3eo5Dg" allowfullscreen></iframe>
+      <div class="card">
+        <h3>Reflection</h3>
+        <p>Think about times you’ve felt unsure online. What made you feel unsafe? What could you do differently next time?</p>
+      </div>
+    </section>
+
+    <!-- Section 5: Quiz -->
+    <section>
+      <h2>5. Quiz: Review Your Computer Skills</h2>
+
+      <form id="tech-quiz">
+        <div class="quiz-question">
+          <p><strong>1.</strong> What part shows things on screen?</p>
+          <label><input type="radio" name="q1" value="Monitor"/> Monitor</label>
+          <label><input type="radio" name="q1" value="Keyboard"/> Keyboard</label>
+          <label><input type="radio" name="q1" value="Mouse"/> Mouse</label>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>2.</strong> What does the mouse do?</p>
+          <label><input type="radio" name="q2" value="Type words"/> Type words</label>
+          <label><input type="radio" name="q2" value="Control movement"/> Control movement</label>
+          <label><input type="radio" name="q2" value="Speak commands"/> Speak commands</label>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>3.</strong> What is a browser used for?</p>
+          <label><input type="radio" name="q3" value="Create images"/> Create images</label>
+          <label><input type="radio" name="q3" value="Connect to internet"/> Connect to internet</label>
+          <label><input type="radio" name="q3" value="Store files"/> Store files</label>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>4.</strong> What should you not click?</p>
+          <label><input type="radio" name="q4" value="Links from friends"/> Links from friends</label>
+          <label><input type="radio" name="q4" value="Unknown pop-ups"/> Unknown pop-ups</label>
+          <label><input type="radio" name="q4" value="Trusted websites"/> Trusted websites</label>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>5.</strong> Why update your programs?</p>
+          <label><input type="radio" name="q5" value="To play music"/> To play music</label>
+          <label><input type="radio" name="q5" value="To keep things safe"/> To keep things safe</label>
+          <label><input type="radio" name="q5" value="To change colors"/> To change colors</label>
+        </div>
+
+        <button type="button" onclick="checkTechAnswers()">Submit Quiz</button>
+        <div id="result" class="result-box" style="display:none;"></div>
+      </form>
+    </section>
+  </main>
+<footer class="footer">
+    <div class="footer-content-wrapper">
+        <div class="footer-brand">
+            <h3 class="footer-logo">LearnSphere</h3>
+            <p class="footer-tagline">Your path to knowledge.</p>
+            <div class="social-icons">
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram"></a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28PNG%29.png/600px-Facebook_logo_%28PNG%29.png" alt="Facebook"></a>
+                <a href="#"><img src="https://static-00.iconduck.com/assets.00/linkedin-icon-2048x2048-yixgqg2p.png" alt="LinkedIn"></a>
+                <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/023/986/704/original/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.png" alt="YouTube"></a>
+            </div>
+        </div>
+
+        <div class="footer-links-group">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact-info">
+            <h3>Contact</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Knowledge Street, Innovation City</p>
+            <p><i class="fas fa-envelope"></i> info@learnsphere.com</p>
+            <p><i class="fas fa-phone"></i> +1 (234) 567-8900</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 LearnSphere. All rights reserved.</p>
+        <div class="footer-legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+  <script>
+    function checkTechAnswers() {
+      let score = 0;
+      const answers = {
+        q1: "Monitor",
+        q2: "Control movement",
+        q3: "Connect to internet",
+        q4: "Unknown pop-ups",
+        q5: "To keep things safe"
+      };
+
+      Object.keys(answers).forEach(q => {
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
+        if (selected && selected.value === answers[q]) score++;
+      });
+
+      const resultBox = document.getElementById("result");
+      resultBox.style.display = "block";
+      resultBox.innerHTML = `<strong>Your score:</strong> ${score}/5<br/>${score >= 4 ? "Great job, you're ready to explore more! 🧠" : "Keep practicing, you're doing great!"}`;
+    }
+  </script>
+</body>
+</html>

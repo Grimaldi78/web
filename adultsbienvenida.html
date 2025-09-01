@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Educación para Adultos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/adultstyle.css"> <!-- corregido -->
+   <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+ <nav class="navbar">
+      <div class="logo">LearnSphere</div>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="niños.html">Kids</a></li>
+        <li><a href="jovenes.html">Teenagers</a></li>
+        <li><a href="adultsbienvenida.html">Adults</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+      </ul>
+         <div class="search-box">
+                <input type="text" placeholder="Search..." id="search-input" />
+               
+                <div id="search-results"></div>
+            </div>
+    </nav>
+ <!-- Sección Hero / Bienvenida -->
+   <li class="login-card" id="login-card">
+    <a href="#" id="login-btn">
+        <span id="login-initials"></span>
+        <span id="login-full-name">Login/Sign Up</span>
+    </a>
+</li>
+<div id="login-popup" class="popup-container">
+    <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h2 class="popup-title">Welcome to LearnSphere</h2>
+        
+        <div class="form-tabs">
+            <button class="tab-link active" onclick="openTab(event, 'login')">Login</button>
+            <button class="tab-link" onclick="openTab(event, 'signup')">Sign Up</button>
+        </div>
+
+        <div id="login" class="tab-content active">
+            <form id="login-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <a href="niños.html"><button type="submit" class="left">Log In</button></a>
+            </form>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+        </div>
+
+        <div id="signup" class="tab-content">
+            <form id="signup-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <button type="submit" class="left">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</div>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to the Adult Section</h1>
+      <p>Explore our courses designed specifically for adults who want to grow personally and professionally.</p>
+    </div>
+  </section>
+  <main class="contenedor-materias-dosfilas">
+    <!-- Fila 1 -->
+    <div class="fila-materias">
+      <div class="card">
+        <img src="img/Guidance.png" alt="Ilustración sobre orientación vocacional para adultos">
+        <h3>Vocational Guidance</h3>
+        <p>Discover your personal talents and interests.</p>
+        <a href="guidance.html">Explorar</a>
+      </div>
+
+      <div class="card">
+        <img src="img/English.png" alt="Ilustración sobre el aprendizaje de inglés práctico">
+        <h3>English</h3>
+        <p>Learn practical English for everyday life and work.</p>
+        <a href="ingles (2).html">Explorar</a>
+      </div>
+    </div>
+
+    <!-- Fila 2 -->
+    <div class="fila-materias">
+      <div class="card">
+        <img src="img/Finance.png" alt="Ilustración sobre educación financiera">
+        <h3>Finance</h3>
+        <p>Manage your money in a practical and secure way.</p>
+        <a href="finanzas.html">Explorar</a> 
+      </div>
+
+      <div class="card">
+        <img src="img/Technology.png" alt="Ilustración sobre habilidades digitales esenciales">
+        <h3>Technology</h3>
+        <p>Master the technological tools for your life and work.</p>
+        <a href="technology.html">Explorar</a> 
+      </div>
+    </div>
+  </main>
+  <section class="seccion-animada-scroll">
+          </div>
+      <section class="seccion-animada-scroll ingles">
+    <h2 class="titulo-seccion-animada">English Learning</h2>
+    <div class="contenedor-bloques-animados">
+        <div class="bloque-animado izquierda">
+            <div class="contenido-texto">
+                <h3 class="titulo-bloque-animado">Speak Confidently</h3>
+                <p class="parrafo-bloque-animado">Practice everyday phrases and dialogues to feel at ease communicating in English.</p>
+                <a href="#" class="boton-explorar">Practice Speaking</a>
+            </div>
+            <img src="img/Learn English.png" alt="Adults practicing English" class="imagen-bloque">
+        </div>
+      
+</section>
+<section class="seccion-animada-scroll vocacional">
+    <h2 class="titulo-seccion-animada">Vocational Training</h2>
+    <div class="contenedor-bloques-animados">
+        <div class="bloque-animado izquierda">
+            <div class="contenido-texto">
+                <h3 class="titulo-bloque-animado">Career Exploration</h3>
+                <p class="parrafo-bloque-animado">Identify strengths and job options through interactive tools and guidance.</p>
+                <a href="#" class="boton-explorar">Find Your Path</a>
+            </div>
+            <img src="img/Vocacionalguidance2.png" alt="Career exploration" class="imagen-bloque">
+        </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="seccion-animada-scroll finanzas">
+    <h2 class="titulo-seccion-animada">Financial Literacy</h2>
+    <div class="contenedor-bloques-animados">
+        <div class="bloque-animado izquierda">
+            <div class="contenido-texto">
+                <h3 class="titulo-bloque-animado">Smart Budgeting</h3>
+                <p class="parrafo-bloque-animado">Discover easy methods to track expenses, create budgets, and save effectively.</p>
+                <a href="#" class="boton-explorar">Start Budgeting</a>
+            </div>
+            <img src="img/finanzas22.png" alt="Budget planning tools" class="imagen-bloque">
+        </div>
+        </div>
+    </div>
+</section>
+<section class="seccion-animada-scroll tecnologia">
+    <h2 class="titulo-seccion-animada">Digital Skills</h2>
+    <div class="contenedor-bloques-animados">
+        <div class="bloque-animado izquierda">
+            <div class="contenido-texto">
+                <h3 class="titulo-bloque-animado">Basic Computer Use</h3>
+                <p class="parrafo-bloque-animado">Learn to navigate systems, use the keyboard and mouse, and explore the web securely.</p>
+                <a href="#" class="boton-explorar">Learn Basics</a>
+            </div>
+            <img src="img/Basic computing.png" alt="Adults using computers" class="imagen-bloque">
+        </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    // 1. Mobile Menu Toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    }
+
+    // 2. Scroll Animations
+    const elementsToAnimate = document.querySelectorAll('.animate-up, .animate-left, .animate-right, .animated-block');
+
+    const animateOnScroll = () => {
+        const windowHeight = window.innerHeight;
+
+        elementsToAnimate.forEach(el => {
+            const elementTop = el.getBoundingClientRect().top;
+            if (elementTop < windowHeight - 150) {
+                el.classList.add('visible');
+            }
+        });
+    };
+
+    window.addEventListener('scroll', animateOnScroll);
+    animateOnScroll();
+
+    // 3. Funcionalidad de la barra de búsqueda
+    const searchInput = document.getElementById('search-input');
+    const searchButton = document.getElementById('search-button');
+    const searchResultsContainer = document.getElementById('search-results');
+
+    // Mapeo de búsquedas a resultados
+    const searchMap = {
+        'kids': 'niños.html',
+        'teenagers': 'jovenes.html',
+        'adults': 'adultsbienvenida.html',
+        'about us': 'aboutus.html',
+        'home': 'Index.html',
+        'ingles': 'ingles.html',
+        'finance': 'finanzas.html',
+        'finanzas': 'finanzas.html',
+        'guidance': 'guidance.html',
+        'habitos': 'habitos.html',
+        'technology': 'technology.html',
+        'tecnologia': 'technology.html',
+        'leccion 1': 'leccion1.html',
+        'leccion de finanzas': 'leccionesfinance.html',
+        'leccion de guidance': 'leccionesguidance.html',
+        'leccion de tecnologia': 'leccionestechno.html',
+        'lecciones de ingles': 'leccionesingles.html',
+        'materias': 'materias.html',
+        'plan financiero': 'planfinanciero.html'
+    };
+
+    const performSearch = () => {
+        const query = searchInput.value.toLowerCase().trim();
+        searchResultsContainer.innerHTML = '';
+        searchResultsContainer.style.display = 'none';
+
+        if (searchMap[query]) {
+            window.location.href = searchMap[query];
+            return; // Detener la ejecución para evitar mostrar otros resultados
+        }
+
+        const results = Object.keys(searchMap).filter(key => key.includes(query));
+
+        if (results.length > 0) {
+            results.forEach(resultKey => {
+                const link = document.createElement('a');
+                link.href = searchMap[resultKey];
+                link.classList.add('search-result-item');
+                link.textContent = resultKey.charAt(0).toUpperCase() + resultKey.slice(1);
+                searchResultsContainer.appendChild(link);
+            });
+            searchResultsContainer.style.display = 'flex';
+        }
+    };
+
+    if (searchInput) {
+        searchInput.addEventListener('keypress', (event) => {
+            if (event.key === 'Enter') {
+                performSearch();
+            }
+        });
+    }
+
+    if (searchButton) {
+        searchButton.addEventListener('click', performSearch);
+    }
+
+    document.addEventListener('click', (event) => {
+        if (searchResultsContainer && searchInput) {
+            if (!searchResultsContainer.contains(event.target) && event.target !== searchInput && event.target !== searchButton) {
+                searchResultsContainer.style.display = 'none';
+            }
+        }
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const bloquesAnimados = document.querySelectorAll('.bloque-animado');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('activo');
+            }
+        });
+    }, { threshold: 0.3 });
+    bloquesAnimados.forEach(b => observer.observe(b));
+});
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // Referencias a los elementos
+    const loginBtn = document.getElementById('login-btn');
+    const popup = document.getElementById('login-popup');
+    const closeBtn = document.querySelector('.close-btn');
+    const tabLinks = document.querySelectorAll('.tab-link');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    // Nuevas referencias para la lógica de sesión
+    const loginInitials = document.getElementById('login-initials');
+    const loginFullName = document.getElementById('login-full-name');
+    const loginCard = document.getElementById('login-card');
+    const loginForm = document.getElementById('login-form');
+    const signupForm = document.getElementById('signup-form');
+
+    let minimizationTimer = null;
+
+    // Función para mostrar el pop-up
+    loginBtn.addEventListener('click', (e) => {
+        if (!loginCard.classList.contains('logged-in')) {
+            e.preventDefault();
+            popup.classList.add('show');
+        } else {
+            // Lógica para expandir/minimizar si ya ha iniciado sesión
+            e.preventDefault();
+            toggleCardSize();
+        }
+    });
+
+    // Función para expandir/minimizar la tarjeta
+    function toggleCardSize() {
+        loginCard.classList.toggle('minimized');
+        if (!loginCard.classList.contains('minimized')) {
+            startMinimizationTimer();
+        }
+    }
+
+    // Iniciar temporizador para encoger la tarjeta
+    function startMinimizationTimer() {
+        clearTimeout(minimizationTimer);
+        minimizationTimer = setTimeout(() => {
+            loginCard.classList.add('minimized');
+        }, 3000);
+    }
+    
+    // Función para cerrar el pop-up
+    closeBtn.addEventListener('click', () => {
+        popup.classList.remove('show');
+    });
+
+    // Cierra el pop-up al hacer clic fuera del contenido
+    window.addEventListener('click', (e) => {
+        if (e.target === popup) {
+            popup.classList.remove('show');
+        }
+    });
+
+    // Función para cambiar de pestaña
+    window.openTab = function(evt, tabName) {
+        tabContents.forEach(tab => tab.classList.remove('active'));
+        tabLinks.forEach(link => link.classList.remove('active'));
+        document.getElementById(tabName).classList.add('active');
+        evt.currentTarget.classList.add('active');
+    }
+
+    // Lógica para manejar el inicio de sesión
+    loginForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = loginForm.querySelector('input[type="email"]').value;
+        localStorage.setItem('userEmail', email);
+        updateLoginStatus();
+        alert('¡Inicio de sesión exitoso!');
+        popup.classList.remove('show');
+    });
+
+    // Lógica para manejar el registro
+    signupForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = signupForm.querySelector('input[type="email"]').value;
+        localStorage.setItem('userEmail', email);
+        updateLoginStatus();
+        alert('¡Registro exitoso!');
+        popup.classList.remove('show');
+    });
+
+    // --- Lógica principal para verificar el estado de la sesión ---
+    function updateLoginStatus() {
+        const userEmail = localStorage.getItem('userEmail');
+        if (userEmail) {
+            const username = userEmail.split('@')[0];
+            const nameParts = username.split(/[\s.-]+/); // Divide por espacios, puntos o guiones
+            let initials = '';
+            if (nameParts.length > 1) {
+                initials = `${nameParts[0].charAt(0)}${nameParts[1].charAt(0)}`;
+            } else {
+                initials = nameParts[0].substring(0, 2);
+            }
+            initials = initials.toUpperCase();
+
+            loginFullName.textContent = `Welcome, ${username}!`;
+            loginInitials.textContent = initials;
+            
+            loginCard.classList.add('logged-in');
+            loginCard.classList.remove('minimized');
+            startMinimizationTimer();
+        } else {
+            loginFullName.textContent = 'Login/Sign Up';
+            loginInitials.textContent = '';
+            loginCard.classList.remove('logged-in');
+            loginCard.classList.remove('minimized');
+        }
+    }
+
+    // Llama a esta función al cargar la página para verificar el estado
+    updateLoginStatus();
+});
+</script>
+
+
+      <footer class="footer">
+    <div class="footer-content-wrapper">
+        <div class="footer-brand">
+            <h3 class="footer-logo">LearnSphere</h3>
+            <p class="footer-tagline">Your path to knowledge.</p>
+            <div class="social-icons">
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram"></a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28PNG%29.png/600px-Facebook_logo_%28PNG%29.png" alt="Facebook"></a>
+                <a href="#"><img src="https://static-00.iconduck.com/assets.00/linkedin-icon-2048x2048-yixgqg2p.png" alt="LinkedIn"></a>
+                <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/023/986/704/original/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.png" alt="YouTube"></a>
+            </div>
+        </div>
+
+        <div class="footer-links-group">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact-info">
+            <h3>Contact</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Knowledge Street, Innovation City</p>
+            <p><i class="fas fa-envelope"></i> info@learnsphere.com</p>
+            <p><i class="fas fa-phone"></i> +1 (234) 567-8900</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 LearnSphere. All rights reserved.</p>
+        <div class="footer-legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </div>
+</footer>
